@@ -21,10 +21,5 @@ class Artist
     add_song(song_name)
   end
  
-  def song.count
-    count = 0
-    Song.all.each {|song| count += song}
-    count
-  end
-  end
+
 end
