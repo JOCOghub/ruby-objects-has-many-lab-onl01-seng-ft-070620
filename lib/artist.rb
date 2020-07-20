@@ -21,7 +21,10 @@ class Artist
     add_song(song_name)
   end
  
-  def songs
-    Song.all.select {|song| song.artist == self}
+  def song.count
+    count = 0
+    Song.all.each {|song| count += song}
+    count
+    
   end
 end
