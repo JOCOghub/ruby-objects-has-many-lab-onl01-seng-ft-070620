@@ -18,11 +18,11 @@ class Author
    
   def add_song_by_name(song_name)
     song = Song.new(song_name)
-    song.artist = self
+    song.author = self
   end
  
    def songs
-    Song.all.select {|song| song.artist == self}
+    Song.all.select {|song| song.author == self}
    end
    
    def self.song_count
