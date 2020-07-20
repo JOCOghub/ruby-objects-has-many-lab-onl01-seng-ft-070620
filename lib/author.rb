@@ -12,16 +12,16 @@ class Author
     @@all
   end 
   
-  def add_song(song)
-    song.author = self
+  def add_song(post)
+    post.author = self
   end
    
   def add_song_by_name(song_name)
-    song = Song.new(song_name)
-    song.author = self
+    post = Song.new(song_name)
+    post.author = self
   end
  
-   def songs
+   def posts
     Song.all.select {|song| song.author == self}
    end
    
