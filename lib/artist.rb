@@ -25,6 +25,6 @@ class Artist
     count = 0
     Song.all.each {|song| count += song}
     count
-    
+  end
   end
 end
