@@ -6,8 +6,8 @@ class Artist
   end
  
   def add_song_by_name(song_name)
-    song = Song.new(name, song)
-    add_song(song)
+    song = Song.new(song_name)
+    add_song(song_name)
   end
  
   def songs
