@@ -1,4 +1,4 @@
-class Artist
+class Author
   attr_accessor :name
  
   @@all = []
@@ -13,7 +13,7 @@ class Artist
   end 
   
   def add_song(song)
-    song.artist = self
+    song.author = self
   end
    
   def add_song_by_name(song_name)
